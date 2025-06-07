@@ -47,3 +47,181 @@ btnNav.forEach((btn, indice) => {
         mostrarSlide()
     })
 })
+
+// Troca de Cores do fundo
+
+const moon = document.getElementById('moon')
+const sun = document.getElementById('sun')
+const dusk = document.getElementById('dusk')
+const nav = document.querySelector('nav')
+const nav_sections = document.querySelector('.nav-sections')
+const first_section = document.querySelector('.first-section')
+const first_section_text = document.querySelector('.first-section-text')
+const second_section = document.querySelector('.second-section')
+const third_section = document.querySelector('.third-section')
+const third_section_text = document.querySelector('.third-section-text')
+const fourth_section = document.querySelector('.fourth-section')
+const fourth_section_text = document.querySelector('.fourth-section-text')
+const fifth_section = document.querySelector('.fifth-section')
+const fifth_section_text = document.querySelector('.fifth-section-text')
+const sixth_section = document.querySelector('.sixth-section')
+const sixth_section_text = document.querySelectorAll('.sixth-section-text')
+const contato = document.getElementById('contato')
+
+let ultimoElementoClicado = null;
+
+
+// Troca o fundo para o dark
+
+moon.addEventListener('click', () => {
+    if(ultimoElementoClicado == 'sun'){
+        nav.classList.remove('light')
+        nav.classList.add('night')
+
+        nav_sections.classList.remove('light')
+        nav_sections.classList.add('night')
+        
+        first_section.classList.remove('light')
+        first_section.classList.add('night')
+        
+        first_section_text.classList.remove('light')
+        first_section_text.classList.add('night')
+        
+        second_section.classList.remove('light')
+        second_section.classList.add('night')
+
+        third_section.classList.remove('light')
+        third_section.classList.add('night')
+        
+        third_section_text.classList.remove('light')
+        third_section_text.classList.add('night')
+        
+        fourth_section.classList.remove('light')
+        fourth_section.classList.add('night')
+        
+        fourth_section_text.classList.remove('light')
+        fourth_section_text.classList.add('night')
+        
+        fifth_section.classList.remove('light')
+        fifth_section.classList.add('night')
+        
+        fifth_section_text.classList.remove('light')
+        fifth_section_text.classList.add('night')
+        
+        sixth_section.classList.remove('light')
+        sixth_section.classList.add('night')
+        
+        sixth_section_text.classList.remove('light')
+        sixth_section_text.classList.add('night')
+        
+        contato.classList.remove('light')
+        contato.classList.add('night')
+        
+    } else if (ultimoElementoClicado == 'dusk'){
+        nav.classList.remove('dusk')
+        nav.classList.add('night')
+       
+        nav_sections.classList.remove('dusk')
+        nav_sections.classList.add('night')
+        
+        first_section.classList.remove('dusk')
+        first_section.classList.add('night')
+        
+        first_section_text.classList.remove('dusk')
+        first_section_text.classList.add('night')
+        
+        second_section.classList.remove('dusk')
+        second_section.classList.add('night')
+        
+        third_section.classList.remove('dusk')
+        third_section.classList.add('night')
+        
+        third_section_text.classList.remove('dusk')
+        third_section_text.classList.add('night')
+        
+        fourth_section.classList.remove('dusk')
+        fourth_section.classList.add('night')
+        
+        fourth_section_text.classList.remove('dusk')
+        fourth_section_text.classList.add('night')
+        
+        fifth_section.classList.remove('dusk')
+        fifth_section.classList.add('night')
+        
+        fifth_section_text.classList.remove('dusk')
+        fifth_section_text.classList.add('night')
+        
+        sixth_section.classList.remove('dusk')
+        sixth_section.classList.add('night')
+        
+        sixth_section_text.classList.remove('dusk')
+        sixth_section_text.classList.add('night')
+        
+        contato.classList.remove('dusk')
+        contato.classList.add('night')
+    
+    } else {
+        nav.classList.add('night')
+        nav_sections.classList.add('night')
+        first_section.classList.add('night')
+        first_section_text.classList.add('night')
+        second_section.classList.add('night')
+        third_section.classList.add('night')
+        third_section_text.classList.add('night')
+        fourth_section.classList.add('night')
+        fourth_section_text.classList.add('night')
+        fifth_section.classList.add('night')
+        fifth_section_text.classList.add('night')
+        sixth_section.classList.add('night')
+        sixth_section_text.classList.add('night')
+        contato.classList.add('night')
+    }
+    ultimoElementoClicado = 'moon'
+    return ultimoElementoClicado
+})
+
+// Troca o fundo para o light
+
+sun.addEventListener('click', () => {
+    if(ultimoElementoClicado == 'moon'){
+        nav.classList.remove('night')
+        nav.classList.add('light')
+
+        nav_sections.classList.remove('night')
+        nav_sections.classList.add('light')
+    } else if (ultimoElementoClicado == 'dusk'){
+        nav.classList.remove('dusk')
+        nav.classList.add('light')
+
+        nav_sections.classList.remove('dusk')
+        nav_sections.classList.add('light')
+    } else {
+        nav.classList.add('light')
+        nav_sections.classList.add('light')
+    }
+    ultimoElementoClicado = 'sun'
+    return ultimoElementoClicado
+})
+
+// Troca o fundo para o dusk
+
+dusk.addEventListener('click', () => {
+    if(ultimoElementoClicado == 'moon'){
+        nav.classList.remove('night')
+        nav.classList.add('dusk')
+
+        nav_sections.classList.remove('night')
+        nav_sections.classList.add('dusk')
+    } else if (ultimoElementoClicado == 'sun'){
+        nav.classList.remove('light')
+        nav.classList.add('dusk')
+
+        nav_sections.classList.remove('light')
+        nav_sections.classList.add('dusk')
+    } else {
+        nav.classList.add('dusk')
+        nav_sections.classList.add('dusk')
+    }
+    ultimoElementoClicado = 'dusk'
+    return ultimoElementoClicado
+})
