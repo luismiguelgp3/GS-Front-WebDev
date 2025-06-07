@@ -48,3 +48,41 @@ export default [
       { option: "Somente quem tem plano premium", correct: true },
     ],
   },
+  {
+    question: "Qual das palavras NÃO representa um valor do AtmoGuard?",
+    answers: [
+      { option: "Agilidade", correct: false },
+      { option: "Segurança", correct: false },
+      { option: "Luxo ", correct: true },
+    ],
+  },
+
+  {
+    question: " Qual é o diferencial do AtmoGuard em relação a outras soluções",
+    answers: [
+      { option: "Oferece previsão do horóscopo", correct: false },
+      { option: "Usa tecnologia para informar com agilidade e precisão", correct: true },
+      { option: "Cobra taxa de uso por desastre", correct: false },
+    ],
+  },
+
+
+  {
+    question: "Como o AtmoGuard fornece os alertas?",
+    answers: [
+      { option: "Por sinais de fumaça", correct: false },
+      { option: "Através de mensagens manuais", correct: false },
+      { option: "Por localização e sistema de notificação automática", correct: true },
+    ],
+  },
+
+  {
+    question: "Qual é o lema final do AtmoGuard?",
+    answers: [
+      { option: "Sempre em alerta!", correct: false },
+      { option: "Juntos, seguros e protegidos", correct: true },
+      { option: "Por localização e sistema de notificação automática", correct: false },
+    ],
+  },
+  
+];
