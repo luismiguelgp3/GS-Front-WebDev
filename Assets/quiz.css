@@ -80,3 +80,31 @@ button:disabled {
   background-color: #ddd;
   cursor: not-allowed;
 }
+
+.finish {
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.finish p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.finish button {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+
+.finish button:hover {
+  background-color: #554bdb;
+}
