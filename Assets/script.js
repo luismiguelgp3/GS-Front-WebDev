@@ -270,3 +270,40 @@ const form   = document.getElementById('form');
             removeError(1);
         }
     }
+
+// Funcionalidade do Mobile
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.createElement('div');
+    mobileMenu.className = 'mobile-menu';
+
+    // Links de Navegacao
+    const navLinks = document.querySelectorAll('.nav-sections a');
+
+    // Criando menu de items
+    navLinks.forEach(link => {
+        const menuItem = document.createElement('a');
+        menuItem.href = link.href;
+        menuItem.textContent = link.textContent;
+        mobileMenu.appendChild(menuItem);
+    });
+
+    // Adiciona botao de fechar
+    const closeButton = document.createElement('i');
+    closeButton.className = 'fa-solid fa-xmark close-menu';
+    closeButton.addEventListener('click', () => {
+        mobileMenu.style.display = 'none';
+    });
+    mobileMenu.appendChild(closeButton);
+
+    document.body.appendChild(mobileMenu);
+
+    hamburger.addEventListener('click', () => {
+        mobileMenu.style.display = 'flex';
+    });
+
+    // Fecha o menu
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.style.display = 'none';
+        });
+    });
