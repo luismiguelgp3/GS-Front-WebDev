@@ -1,0 +1,12 @@
+Link do repositorio
+
+https://github.com/luismiguelgp3/GS-Front-WebDev.git
+
+Integrantes do grupo:
+
+Rafael Joda da Costa e Silva RM 561939
+
+Luis Miguel RM 561232
+
+Davi Alves RM 566279
+
